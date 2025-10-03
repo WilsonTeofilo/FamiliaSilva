@@ -21,12 +21,17 @@
         />
 
    <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/layoutEmail"
        android:layout_height="wrap_content"
        android:layout_width="match_parent"
        android:layout_below="@id/logozinho"
        app:boxStrokeWidth="2dp"
        app:boxStrokeColor="#1A98D7"
+       app:startIconDrawable="@drawable/emei"
        >
+       <!--
+   sem texto, apenas layout
+       -->
 
     <com.google.android.material.textfield.TextInputEditText
        android:id="@+id/Email"
@@ -35,9 +40,50 @@
         android:hint="Insira seu Email"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/logozinho"
-
+        android:fontFamily="@font/font"
         />
+
     </com.google.android.material.textfield.TextInputLayout>
+
+    <!--
+Texto com logo
+  -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutSenha"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layoutEmail"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeColor="#1A98D7"
+        app:startIconDrawable="@drawable/senha"
+        >
+        <!--
+    sem texto, apenas layout
+        -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira sua senha"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Email"
+            android:fontFamily="@font/font"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--
+Texto com logo
+  -->
+
+
+
+
+
+
+
 
 
 
